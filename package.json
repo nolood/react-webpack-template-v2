@@ -5,17 +5,24 @@
   "scripts": {
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
-    "dev": "webpack serve --env port=3000 mode=development"
+    "build:mobile": "webpack --env mode=production --env platform=mobile",
+    "build:desktop": "webpack --env mode=production --env platform=desktop",
+    "dev": "webpack serve --env port=3000 --env mode=development"
   },
   "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20.10.2",
     "@types/react": "^18.2.40",
     "@types/react-dom": "^18.2.17",
     "@types/webpack": "^5.28.5",
+    "@types/webpack-bundle-analyzer": "^4.6.3",
     "@types/webpack-dev-server": "^4.7.2",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
+    "react-refresh": "^0.14.0",
+    "react-refresh-typescript": "^2.0.9",
     "react-router-dom": "^6.20.1",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
@@ -24,6 +31,7 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2",
     "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },

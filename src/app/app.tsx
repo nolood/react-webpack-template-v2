@@ -1,10 +1,12 @@
 import React from "react";
 import './styles/globals.scss';
-import {Outlet} from "react-router-dom";
+import {RouterProvider} from "react-router-dom";
+import {router} from "../shared/router/router";
 const App = () => {
   return (
     <div>
-      <Outlet/>
+      dadasdasdas
+        <RouterProvider router={router}/>
     </div>
   );
 };
