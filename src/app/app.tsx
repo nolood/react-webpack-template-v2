@@ -6,7 +6,7 @@ import { type FC } from "react";
 const App: FC = () => {
   return (
     <div>
-      dadasdasdas
+      dasdasd
       <RouterProvider router={router} />
     </div>
   );
