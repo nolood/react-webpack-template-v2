@@ -1,10 +1,7 @@
+import { type FC } from "react";
 
-const Other = () => {
-  return (
-    <div>
-      Otherpage
-    </div>
-  );
+const Other: FC = () => {
+  return <div>Otherpage</div>;
 };
 
 export default Other;

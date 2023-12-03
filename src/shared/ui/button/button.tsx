@@ -1,12 +1,8 @@
-import styles from './button.module.scss'
+import styles from "./button.module.scss";
+import { type FC } from "react";
 
-
-const Button = () => {
-  return (
-    <div className={styles.button}>
-      dasdasda
-    </div>
-  );
+const Button: FC = () => {
+  return <div className={styles.button}>dasdasda</div>;
 };
 
 export default Button;

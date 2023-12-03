@@ -1,4 +1,12 @@
 {
+//  "exclude": ["webpack.config.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".eslintrc.js",
+    "config/build/*.ts",
+    "webpack.config.ts"
+  ],
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
@@ -11,7 +19,9 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": [
+        "src/*"
+      ]
     }
   },
   "ts-node": {

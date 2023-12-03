@@ -1,12 +1,13 @@
-import React from "react";
-import './styles/globals.scss';
-import {RouterProvider} from "react-router-dom";
-import {router} from "../shared/router/router";
-const App = () => {
+import "./styles/globals.scss";
+import { RouterProvider } from "react-router-dom";
+import { router } from "~/shared/router/router";
+import { type FC } from "react";
+
+const App: FC = () => {
   return (
     <div>
       dadasdasdas
-        <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   );
 };

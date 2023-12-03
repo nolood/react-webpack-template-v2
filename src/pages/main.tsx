@@ -1,9 +1,7 @@
-const Main = () => {
-  return (
-    <div>
-      Main page
-    </div>
-  );
+import { type FC } from "react";
+
+const Main: FC = () => {
+  return <div>Main page</div>;
 };
 
 export default Main;
